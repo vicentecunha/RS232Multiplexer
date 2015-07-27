@@ -4200,26 +4200,23 @@ Metric Code Size 5664</description>
 <net name="SEL2" class="0">
 <segment>
 <pinref part="DMUX2" gate="G$1" pin="C1"/>
-<wire x1="38.1" y1="-22.86" x2="38.1" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="-25.4" x2="40.64" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-22.86" x2="38.1" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-30.48" x2="40.64" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="DMUX2" gate="G$1" pin="C2"/>
-<wire x1="40.64" y1="-25.4" x2="40.64" y2="-22.86" width="0.1524" layer="91"/>
-<junction x="40.64" y="-25.4"/>
-<wire x1="40.64" y1="-25.4" x2="40.64" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-30.48" x2="40.64" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="40.64" y="-30.48"/>
 <pinref part="DMUX1" gate="G$1" pin="C1"/>
-<wire x1="38.1" y1="-83.82" x2="38.1" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="-86.36" x2="40.64" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-83.82" x2="38.1" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-91.44" x2="40.64" y2="-91.44" width="0.1524" layer="91"/>
 <pinref part="DMUX1" gate="G$1" pin="C2"/>
-<wire x1="40.64" y1="-83.82" x2="40.64" y2="-86.36" width="0.1524" layer="91"/>
-<junction x="40.64" y="-86.36"/>
-<wire x1="40.64" y1="-86.36" x2="40.64" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-83.82" x2="40.64" y2="-91.44" width="0.1524" layer="91"/>
+<junction x="40.64" y="-91.44"/>
 <pinref part="DMUX3" gate="G$1" pin="C1"/>
-<wire x1="38.1" y1="38.1" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="35.56" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="38.1" x2="38.1" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="30.48" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="DMUX3" gate="G$1" pin="C2"/>
-<wire x1="40.64" y1="35.56" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
-<junction x="40.64" y="35.56"/>
-<wire x1="40.64" y1="35.56" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="30.48" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
+<junction x="40.64" y="30.48"/>
 <wire x1="40.64" y1="30.48" x2="83.82" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="30.48" x2="83.82" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="-30.48" x2="83.82" y2="-91.44" width="0.1524" layer="91"/>
@@ -4301,12 +4298,11 @@ Metric Code Size 5664</description>
 <wire x1="20.32" y1="-10.16" x2="22.86" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="-10.16" x2="22.86" y2="-60.96" width="0.1524" layer="91"/>
 <pinref part="DMUX1" gate="G$1" pin="!G1"/>
-<wire x1="22.86" y1="-60.96" x2="25.4" y2="-60.96" width="0.1524" layer="91"/>
 <pinref part="DMUX1" gate="G$1" pin="!G2"/>
-<wire x1="25.4" y1="-60.96" x2="27.94" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="-63.5" x2="25.4" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="-63.5" x2="25.4" y2="-60.96" width="0.1524" layer="91"/>
-<junction x="25.4" y="-60.96"/>
+<wire x1="22.86" y1="-60.96" x2="27.94" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-63.5" x2="22.86" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-63.5" x2="22.86" y2="-60.96" width="0.1524" layer="91"/>
+<junction x="22.86" y="-60.96"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -4429,11 +4425,9 @@ Metric Code Size 5664</description>
 </net>
 <net name="CHANNEL15_TTL_RX" class="0">
 <segment>
-<wire x1="50.8" y1="7.62" x2="53.34" y2="7.62" width="0.1524" layer="91"/>
 <label x="55.88" y="7.62" size="1.778" layer="95"/>
 <pinref part="DMUX2" gate="G$1" pin="!D7"/>
 <wire x1="53.34" y1="7.62" x2="81.28" y2="7.62" width="0.1524" layer="91"/>
-<junction x="53.34" y="7.62"/>
 </segment>
 </net>
 <net name="CHANNEL16_TTL_RX" class="0">
@@ -4481,14 +4475,14 @@ Metric Code Size 5664</description>
 <net name="N$14" class="0">
 <segment>
 <pinref part="DMUX4" gate="G$1" pin="!D2"/>
-<wire x1="20.32" y1="-5.08" x2="25.4" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="-5.08" x2="25.4" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-5.08" x2="22.86" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-5.08" x2="22.86" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="DMUX3" gate="G$1" pin="!G2"/>
-<wire x1="25.4" y1="58.42" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="58.42" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="58.42" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="58.42" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="DMUX3" gate="G$1" pin="!G1"/>
-<wire x1="27.94" y1="60.96" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
-<junction x="25.4" y="58.42"/>
+<wire x1="27.94" y1="60.96" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
+<junction x="22.86" y="58.42"/>
 </segment>
 </net>
 </nets>
