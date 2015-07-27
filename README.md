@@ -24,16 +24,6 @@ Segue o detalhamento para cada uma destas partes, em respectiva ordem.
 Esta parte é responsável pela conversão dos níveis de tensão do padrão EIA-232 para o padrão TTL.
 Isto fez-se necessário já que existia disponibilidade apenas de multiplexadores/demultiplexadores TTL.
 
-A conversão de níveis de tensão é dada pela seguinte tabela:
-
-Nível Lógico| EIA-232     | TTL
-
-------------+-------------+--------------
-
-  LOW  (0)  | [+3, +25] V | [+0, +0.4] V
-  
-  HIGH (1)  | [-3, -25] V | [+2.7, +5] V
-
 As especificações de tensão para EIA-232 são superiores e mais "tolerantes" que as especificações para TTL,
 sendo comum encontrar dispositivos com TX do RS232 em 'HIGH' em torno de -7 Volts.
 O MAX232 é alimentado por somente 5V e GND;
