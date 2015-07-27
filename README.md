@@ -21,7 +21,7 @@ O multiplexador pode ser separado em três partes funcionais principais:
 Segue o detalhamento para cada uma destas partes, em respectiva ordem.
 
 ##### MAX232, driver dual EIA-232
-Esta parte é responsável pela conversão dos níveis de tensão do padrão EIA-232 para o padrão TTL.
+Responsável pela conversão dos níveis de tensão do padrão EIA-232 para o padrão TTL.
 
 As especificações de tensão para EIA-232 são superiores e mais "tolerantes" que as especificações para TTL,
 sendo comum encontrar dispositivos com TX do RS232 em 'HIGH' em torno de -7 Volts.
@@ -34,17 +34,17 @@ Este projeto utiliza portanto 12 MAX232 ao todo,
 [22 canais]/2 para os canais a serem multiplexados e 1 para o canal de destino.
 
 ##### 74251, multiplexador 8:1
-Esta parte realiza a multiplexação dos sinais de TX dos canais para o RX do canal de destino.
+Realiza a multiplexação dos sinais de TX dos canais para o RX do canal de destino.
 
 Cada 74251 é capaz de multiplexar apenas 8 sinais;
 a fim de multiplexar 22 canais, conectam-se os sinais TX às entradas de três 74251,
 estando os três com sinais de seleção menos significativos (SEL2-SEL0).
 Um quarto 74251 então multiplexa a saída destes três com sinais de seleção mais significativos (SEL4-SEL3).
 Desta forma, uma espécie de "árvore" de multiplexadores é formada,
-e cada canal pode ser selecionado individualmente pelo sua respectiva sequência binária (SEL4-SEL0).
+e cada canal pode ser selecionado individualmente por sua respectiva sequência binária (SEL4-SEL0).
 
 ##### 74156, demultiplexador 1:8
-Esta parte realiza a demultiplexação dos sinais de TX do canal de destino para o RX dos demais canais.
+Realiza a demultiplexação dos sinais de TX do canal de destino para o RX dos demais canais.
 O 74156 é na verdade composto por um par de demultiplexadores 1:4,
 mas unindo entre si as conexões de entrada (G1 e G2) e os sinais de seleção mais significativos (C1 e C2),
 obtém-se um demultiplexador 1:8.
