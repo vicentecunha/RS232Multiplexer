@@ -22,7 +22,6 @@ Segue o detalhamento para cada uma destas partes, em respectiva ordem.
 
 ##### MAX232, driver dual EIA-232
 Esta parte é responsável pela conversão dos níveis de tensão do padrão EIA-232 para o padrão TTL.
-Isto fez-se necessário já que existia disponibilidade apenas de multiplexadores/demultiplexadores TTL.
 
 As especificações de tensão para EIA-232 são superiores e mais "tolerantes" que as especificações para TTL,
 sendo comum encontrar dispositivos com TX do RS232 em 'HIGH' em torno de -7 Volts.
