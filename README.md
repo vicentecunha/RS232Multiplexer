@@ -2,20 +2,26 @@
 Vicente Cunha, julho de 2015
 
 ## Descrição Geral
-Este multiplexador foi projetado a fim de que determinado datalogger com apenas uma porta de comunicação RS232 seja capaz adquirir dados de múltiplos sensores RS232.
+Este multiplexador foi projetado a fim de que determinado datalogger com apenas uma porta de comunicação RS232 seja capaz de adquirir dados de múltiplos sensores RS232.
 A multiplexação e a demultiplexação dos canais são realizadas em nível lógico TTL,
 sendo utilizados drivers duais EIA-232 (MAX232) para a conversão dos níveis de tensão.
 
 ### Conexões Externas
 Alimentação: 5V - GND
+
 Canais a serem multiplexados: 22 canais RS232 (0 - 21) de três conexões cada (RX, TX e GND)
+
 Canal de "destino": 1 canal RS232 de três conexões (RX, TX e GND)
+
 Seleção de canais: 5 sinais para seleção de canal (SEL4-SEL0)
 
 #### Detalhamento
 O multiplexador pode ser separado em três partes funcionais principais:
+
 - Conversão de níveis de tensão EIA-232/TTL, utilizando MAX232;
+
 - Multiplexação de TX dos canais a serem multiplexados para o RX do canal destino, utilizando 74251;
+
 - Demultiplexação de TX do canal destino ao RX dos canais a serem multiplexados, utilizando 74156.
 
 Segue o detalhamento para cada uma destas partes, em respectiva ordem.
