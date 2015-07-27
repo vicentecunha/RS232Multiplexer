@@ -27,8 +27,11 @@ Isto fez-se necessário já que existia disponibilidade apenas de multiplexadore
 A conversão de níveis de tensão é dada pela seguinte tabela:
 
 Nível Lógico| EIA-232     | TTL
+
 ------------+-------------+--------------
+
   LOW  (0)  | [+3, +25] V | [+0, +0.4] V
+  
   HIGH (1)  | [-3, -25] V | [+2.7, +5] V
 
 As especificações de tensão para EIA-232 são superiores e mais "tolerantes" que as especificações para TTL,
