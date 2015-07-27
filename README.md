@@ -16,7 +16,7 @@ Seleção de canais: 5 sinais para seleção de canal (SEL4-SEL0)
 O multiplexador pode ser separado em três partes funcionais principais:
 - Conversão de níveis de tensão EIA-232/TTL, utilizando MAX232;
 - Multiplexação de TX dos canais a serem multiplexados para o RX do canal destino, utilizando 74251;
-- Demultiplexação de TX do canal destino aos canais a serem multiplexados utilizando 74156.
+- Demultiplexação de TX do canal destino ao RX dos canais a serem multiplexados, utilizando 74156.
 
 Segue o detalhamento para cada uma destas partes, em respectiva ordem.
 
